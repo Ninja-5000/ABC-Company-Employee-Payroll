@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+      <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+      <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+      <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+      <title>ABC Employee Payroll</title>
+  </head>
+
+   <body>
+      <script src="./script.js"></script>
+      <section class="section-payroll">
+         <div class="row">
+             <h2>Payroll System</h2>
+         </div>
+         <div class="row">
+             <form method="post" action="#" class="payroll-system">
+                  <div class="row">
+                      <div class="col span-1-of-3">
+                          <label for="id">Employee ID</label>
+                      </div>  
+                      <div class="col span-2-of-3">
+                          <input type="text" name="id" id="id" placeholder="Your Employee's ID" required>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col span-1-of-3">
+                          <label for="name">Employee Name</label>
+                      </div>  
+                      <div class="col span-2-of-3">
+                          <input type="text" name="name" id="name" placeholder="Your Employee's Name" required>
+                      </div>
+                  </div>
+                  <div class="row">
+                     <div class="col span-1-of-3">
+                         <label for="age">Employee Age</label>
+                     </div>  
+                     <div class="col span-2-of-3">
+                         <input type="text" name="age" id="age" placeholder="Your Employee's Age" required>
+                     </div>
+                 </div>
+                  <div class="row">
+                      <div class="col span-1-of-3">
+                          <label for="designation">Designation</label>
+                      </div>  
+                      <div class="col span-2-of-3">
+                        <input type="text" name="designation" id="designation" placeholder="Your Employee's Designation" required>
+                      </div>
+                  </div>
+                  <div class="row">
+                     <div class="col span-1-of-3">
+                        <label for="basic">Basic Pay</label>
+                    </div>  
+                    <div class="col span-2-of-3">
+                      <input type="text" name="basic" id="basic" placeholder="Your Employee's Basic Pay (in AED)" required>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col span-1-of-3">
+                          <label>&nbsp;</label>
+                      </div>  
+                      <div class="col span-2-of-3">
+                          <input type="submit" value="Generate Payslip" onclick="getForm()">
+                      </div>
+                  </div>
+             </form>
+         </div>
+
+         <b><div class="output" id="output"></div></b>
+     </section>
+
+   </body>
+</html>
