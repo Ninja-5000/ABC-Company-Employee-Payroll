@@ -20,6 +20,7 @@ function getForm() {
    var designation = document.getElementById("designation").value
    var age = document.getElementById("age").value
    var month = document.getElementById("month").value
+   month = month.toUpperCase();
    var basic = +document.getElementById("basic").value
    
    //calculations
