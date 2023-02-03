@@ -19,6 +19,7 @@ function getForm() {
    var nameE = document.getElementById("name").value
    var designation = document.getElementById("designation").value
    var age = document.getElementById("age").value
+   var month = document.getElementById("month").value
    var basic = +document.getElementById("basic").value
    
    //calculations
@@ -34,7 +35,7 @@ function getForm() {
 
    /*var output = document.getElementById("output").value*/
    // Generating Output
-   var result = "Employee ID: "+id+ "</br>"+"Employee Name: "+nameE +"</br>"+"Employee Designation: "+designation +"<br>"+"Employee Age: "+age +"<br>"+ "<br><br>EARNINGS <br> -------------------------- <br>" + "Basic Pay: "+basic + "<br> HRA: "+hra + "<br> DA: "+da + "<br> Gross Pay: "+gp + "<br> Net Pay: "+np
+   var result = "SALARY SLIP FOR THE MONTH OF "+month+" 2022 <br>"+ "Employee ID: "+id+ "</br>"+"Employee Name: "+nameE +"</br>"+"Employee Designation: "+designation +"<br>"+"Employee Age: "+age +"<br>"+ "<br><br>EARNINGS <br> -------------------------- <br>" + "Basic Pay: "+basic + "<br> HRA: "+hra + "<br> DA: "+da + "<br> Gross Pay: "+gp + "<br> Net Pay: "+np
    /*document.write(result)*/
    document.getElementById("output").innerHTML = result;
 }
