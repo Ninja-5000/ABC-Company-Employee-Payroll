@@ -436,6 +436,7 @@ textarea {
 .output{
     margin-top: 25px;
     margin-left: 28%;
+    margin-bottom: 20px;
 }
 
 *:focus {outline:none};
